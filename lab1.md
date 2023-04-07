@@ -29,7 +29,7 @@ This is a step-by-step guide on how to access your course-specific account on ie
 ---
 
 ## **STEP 3: Trying Some Commands**
-Now that we have access to the our account on ieng6, we should try running some commands!
+Now that we have access to our account on ieng6, we should try running some commands!  
 Here is a list of commands and their function:  
 ```
 pwd "Print Working Directory"
