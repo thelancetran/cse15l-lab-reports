@@ -12,3 +12,6 @@ This is a step-by-step guide on how to access your course-specific account on ie
 ### **(WINDOWS ONLY!!!) STEP 1.5: Git Bash and VS Code**
 *If you have already set the default terminal in VS Code to use Git Bash, then you can skip this step*
 1. Go to the [Git for Windows Website](https://gitforwindows.org/)
+![Image](GitDownload.png)
+2. Click on the download link shown above in red
+3. Next, follow this [Stack Overflow post](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) that will explain how to set your default terminal in VS Code to use Git Bash
