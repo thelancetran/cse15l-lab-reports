@@ -18,3 +18,4 @@ This is a step-by-step guide on how to access your course-specific account on ie
 ---
 ## **STEP 2: Remotely Connecting**
 1. In VS Code, open the terminal by going to `terminal` -> `new terminal` or with the shortcut `Ctrl` + ``` ` ```
+
