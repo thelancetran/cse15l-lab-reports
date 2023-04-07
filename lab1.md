@@ -39,3 +39,4 @@ cp "Change Path"
 mkdir "Make Directory"
 cat "Concatenate"
 ```
+Here are some examples of these commands:
