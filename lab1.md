@@ -22,6 +22,7 @@ This is a step-by-step guide on how to access your course-specific account on ie
 ## **STEP 2: Remotely Connecting**
 1. In VS Code, open the terminal by going to `terminal` -> `new terminal` or with the shortcut `Ctrl` + ``` ` ```. You should see something like this:
 ![Image](TerminalVSCode.png)
-2. Type `ssh <course-specific account>@ieng6.ucsd.edu` where `<course-specific account>` is your course-specific account
-3. Press `Enter` and enter your password
+2. Type `ssh <course-specific account>@ieng6.ucsd.edu` where `<course-specific account>` is your course-specific account and press `Enter`
+3. Enter your password and you should get something like this:
 * **NOTE:** When typing in your password, you will NOT be able to see any characters being typed, but keep in mind that this is normal and whatever you type is being inputted!
+![Image](LogIn.png)
