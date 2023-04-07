@@ -17,4 +17,4 @@ This is a step-by-step guide on how to access your course-specific account on ie
 3. Next, follow this [Stack Overflow post](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) that will explain how to set your default terminal in VS Code to use Git Bash
 ---
 ## **STEP 2: Remotely Connecting**
-1. In VS Code, open the terminal by going to `terminal` -> `new terminal` or with the shortcut `Ctrl` + ` ``
+1. In VS Code, open the terminal by going to `terminal` -> `new terminal` or with the shortcut `Ctrl` + ``` ` ```
