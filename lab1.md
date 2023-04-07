@@ -26,3 +26,16 @@ This is a step-by-step guide on how to access your course-specific account on ie
 3. Enter your password and you should get something like this:
 * **NOTE:** When typing in your password, you will NOT be able to see any characters being typed, but keep in mind that this is normal and whatever you type is being inputted!
 ![Image](LogIn.png)
+---
+
+## **STEP 3: Trying Some Commands**
+Now that we have access to the our account on ieng6, we should try running some commands!
+Here is a list of commands and their function:
+```
+pwd "Print Working Directory"
+ls "List"
+cd "Change Directory"
+cp "Change Path"
+mkdir "Make Directory"
+cat "Concatenate"
+```
