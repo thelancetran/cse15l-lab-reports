@@ -8,3 +8,7 @@ This is a step-by-step guide on how to access your course-specific account on ie
 3. Install the file matching on your operating system (Windows, Linux, Mac)
 4. After installing, open VS Code and it should look something like this:
 ![Image](VSCodeHome.png)
+
+### **(WINDOWS ONLY!!!) STEP 1.5: Git Bash and VS Code**
+*If you have already set the default terminal in VS Code to use Git Bash, then you can skip this step*
+1. Go to the [Git for Windows Website](https://gitforwindows.org/)
