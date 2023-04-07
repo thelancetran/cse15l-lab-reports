@@ -39,7 +39,7 @@ cp "Change Path"
 mkdir "Make Directory"
 cat "Concatenate"
 ```
-Here are some examples of these commands:  
+Here are some examples of these commands in use:  
 `ls -lat`  
 ![Image](ls-lat.png)
 
