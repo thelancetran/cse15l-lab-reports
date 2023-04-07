@@ -42,7 +42,7 @@ cat "Concatenate"
 Here are some examples of these commands:
 `ls -lat`
 ![Image](ls-lat.png)
- 
+
 `cd ~, cd .., cd, cat, cp`
 ![Image](someCommands.png)
 
