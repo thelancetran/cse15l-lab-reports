@@ -39,11 +39,11 @@ cp "Change Path"
 mkdir "Make Directory"
 cat "Concatenate"
 ```
-Here are some examples of these commands:
-`ls -lat`
+Here are some examples of these commands:  
+`ls -lat`  
 ![Image](ls-lat.png)
 
-`cd ~, cd .., cd, cat, cp`
+`cd ~, cd .., cd, cat, cp`  
 ![Image](someCommands.png)
 
 * **NOTE:** When finished, you can log out of the remote server by typing and entering `Exit`
