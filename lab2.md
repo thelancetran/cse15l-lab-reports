@@ -47,5 +47,14 @@ class StringServer {
 
 ### first run of `/add-message` 
 ![Image](images/firstMsg.png)
-
+ 
+**Before:** The `StringServer main method` is called first and takes a `port` number argument from the user. Then, the `port` number and an instance of our `Handler3` class are passed as arguments to the `start` method from our `Server` class, where it creates our server.
+ 
+1. Adding `/add-message?s=Hello there` to our URL as shown above causes our server run the code to handle the request.
+2. Because the url path is `/add-message`, our program iterates through our `else-if` statement. 
+3. Here, we set a String array called `params` to be the String elements separated by `=` after the query, which is the portion of the URL after `?`.
+4. Next, we check if the first element of the `params` array is `s`.
+    1. If it is, we check to see if our String instance variable `msg` is empty (which means that this is the first message!). 
+    2. If it is NOT empty, we must concatenate `\n` to `msg` in order to skip to a new line. Then, we concatenate the second element of `params` to `msg`.
+5. Lastly, we return `msg` to output in our web server!
 
