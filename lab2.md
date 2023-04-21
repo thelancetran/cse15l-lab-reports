@@ -44,7 +44,7 @@ class StringServer {
     }
 }
 ```
-
+ 
 ### First run of `/add-message` 
 ![Image](images/firstMsg.png)
  
@@ -52,12 +52,22 @@ class StringServer {
  
 1. Adding `/add-message?s=Hello there` to our URL as shown above causes our server run the code to handle the request, passing our URL as an argument to the `handleRequest method`.
 2. The `url.getPath()` method checks the path of our URL and returns true in the `else-if` statement because our url path is `/add-message`.
-3. Here, we set a String array **instance variable** `params` to be the String elements separated by `=` after the query, which is the portion of the URL after `?`.
-4. Next, we check if the first element of the `params` array is `s`.
-    1. Since our String **instance variable** `msg` is empty (which means that this is the first message!), we simply concatenate the second element of `params` to `msg`.
-5. Lastly, we return `msg` to output in our web server!
-
+3. Here, we set a String array **instance variable** `params` to be the String elements separated by `=` using the `split` method on the query, which is the portion of the URL after `?` that is obtained by the `url.getQuery()` method.
+4. Next, we check that the first element of the `params` array is `s`.
+5. Since our String **instance variable** `msg` is empty (which means that this is the first message!), we simply concatenate the second element of `params` to `msg`.
+6. Lastly, we return `msg` to output in our web server!
+ 
 ### Second run of `/add-message`
 ![Image](images/secondMsg.png)
  
-1. Adding `/add-message?s=how was your day` to our URL as shown above runs almost identically to 
+1. Adding `/add-message?s=how was your day` to our URL as shown above runs almost identically to the previous run. But in short:
+    1. The server passes our URL to the `handleRequest` method as an argument
+    2. `url.getPath()` checks the URL path and returns true in the `else-if` statement since the path is `/add-message`
+    3. **instance variable** `params` becomes `{s, how was your day}` from `getQuery()` and `split` 
+    4. Then we check that the first element of `params` is `s`.
+2. Now because our web server never restarted, the **instance variable** `msg` still contains `Hello there` from the previous run.
+3. Therefore, since `msg` is NOT empty, we concatenate a `\n` to our `msg`, which proceeds to the next line.
+4. Then, we concatenate the second element of `params` to `msg`
+5. Lastly, we return `msg` to output in our web server, which will have our second message be printed on a new line as shown above
+ 
+
