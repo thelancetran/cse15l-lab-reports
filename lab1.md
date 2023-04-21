@@ -34,7 +34,7 @@ Here is a list of commands and their function:
 ```
 pwd: "Print Working Directory" - shows the current directory that you are in
 ls: "List" - lists the files in the current directory you are in
-cd: "Change Directory" - you can change your directory by entering 
+cd: "Change Directory" - you can change your directory by entering a path
 cp: "Copy" - you can copy file(s) from the directory you are in, into another directory
 mkdir: "Make Directory" - you can create your own directories in the directory you are in
 cat: "Concatenate" - prints out the "String" contents (basically outputs words, like code in a .java file)
