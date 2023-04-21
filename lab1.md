@@ -32,18 +32,18 @@ This is a step-by-step guide on how to access your course-specific account on ie
 Now that we have access to our account on ieng6, we should try running some commands!  
 Here is a list of commands and their function:  
 ```
-pwd "Print Working Directory"
-ls "List"
-cd "Change Directory"
-cp "Change Path"
-mkdir "Make Directory"
-cat "Concatenate"
+pwd: "Print Working Directory" - shows the current directory that you are in
+ls: "List" - lists the files in the current directory you are in
+cd: "Change Directory" - you can change your directory by entering 
+cp: "Copy" - you can copy file(s) from the directory you are in, into another directory
+mkdir: "Make Directory" - you can create your own directories in the directory you are in
+cat: "Concatenate" - prints out the "String" contents (basically outputs words, like code in a .java file)
 ```
 Here are some examples of these commands in use:  
-`ls -lat`  
+`ls -lat`  - by including `-lat`, we can display full contents (`l`), which include hidden files and directories (`a`), in our current directory in a long listing format, which begins with the most recently edited file (`t`). Hence, `-lat`!
 ![Image](ls-lat.png)
 
-`cd ~, cd .., cd, cat, cp`  
+`cd ~, cd .., cd, cat, cp`  - by including `~`, we can access the home directory (So `cd ~` will change directories to the home directory). And `..` refers to the previous directory (So `cd ..` will change directories to the previous directory!)
 ![Image](someCommands.png)
 
 * **NOTE:** When finished, you can log out of the remote server by typing and entering `Exit`
