@@ -4,7 +4,7 @@
 ## **Part 1 - StringServer**
 * This part demonstrates the ability to write a web server that prints out a message in a new line for the incoming request: `/add-message?s=<string>`
 
-### **My code for StringServer**
+### **My code for StringServer:**
 ```
 import java.io.IOException;
 import java.net.URI;
