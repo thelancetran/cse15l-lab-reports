@@ -44,3 +44,8 @@ class StringServer {
     }
 }
 ```
+
+### first run of `/add-message` 
+[Image](images/firstMsg.png)
+
+
