@@ -63,7 +63,7 @@ class StringServer {
 1. Adding `/add-message?s=how was your day` to our URL as shown above runs almost identically to the previous run. But in short:
     1. The server passes our URL to the `handleRequest` method as an argument
     2. `url.getPath()` checks the URL path and returns true in the `else-if` statement since the path is `/add-message`
-    3. **instance variable** `params` becomes `{s, how was your day}` from `getQuery()` and `split` 
+    3. **instance variable** `params` gets updated to be `{s, how was your day}` from `getQuery()` and `split` 
     4. Then we check that the first element of `params` is `s`.
 2. Now because our web server never restarted, the **instance variable** `msg` still contains `Hello there` from the previous run.
 3. Therefore, since `msg` is NOT empty, we concatenate a `\n` to our `msg`, which proceeds to the next line.
