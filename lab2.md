@@ -108,3 +108,38 @@ public void testAvgLowestPosition() {
 #### **Symptom from compiling and then running the JUnit tests:**
  
 ![Image](images/methodTestBug.png)
+ 
+* **Note:** We see that the symptom comes from our failure-inducing input method `testAvg2Lowest()` in which our actual and expected values were not equivalent (i.e. `2.0 != 3.0`)
+ 
+#### **Code Before**
+```
+static double averageWithoutLowest(double[] arr) {
+  if(arr.length < 2) { return 0.0; }
+  double lowest = arr[0];
+  for(double num: arr) {
+    if(num < lowest) { lowest = num; }
+  }
+  double sum = 0;
+  for(double num: arr) {
+    if(num != lowest) { sum += num; }
+  }
+  return sum / (arr.length - 1);
+}
+```
+
+#### **Code After**
+```
+static double averageWithoutLowest(double[] arr) {
+  if(arr.length < 2) { return 0.0; }
+  double lowest = arr[0];
+  for(double num: arr) {
+    if(num < lowest) { lowest = num; }
+  }
+  double sum = 0;
+  double count = 0;
+  for(double num: arr) {
+    if(num != lowest) { sum += num; count += 1;}
+  }
+  return sum / count;
+}
+```
