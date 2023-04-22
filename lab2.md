@@ -70,4 +70,32 @@ class StringServer {
 4. Then, we concatenate the second element of `params` to `msg`
 5. Lastly, we return `msg` to output in our web server, which will have our second message be printed on a new line as shown above
  
+## **Part 2 - Debugging**
+* This part demonstrates the ability to use JUnit tool to test buggy programs. We find a failure-inducing input to find symptoms of our program output, in which we use to help identify the bug in our code.
+ 
+### **Code to inspect: averageWithoutLowest:**
+```
+  // Averages the numbers in the array (takes the mean), but leaves out the
+  // lowest number when calculating. Returns 0 if there are no elements or just
+  // 1 element in the array
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+#### **Failure-Inducing Input in JUnit:**
+
+
+
+
+
+
 
