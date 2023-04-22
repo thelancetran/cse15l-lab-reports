@@ -107,4 +107,4 @@ public void testAvgLowestPosition() {
  
 #### **Symptom from compiling and then running the JUnit tests:**
  
-![Image](methodTestBug.png)
+![Image](images/methodTestBug.png)
