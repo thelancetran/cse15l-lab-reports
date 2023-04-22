@@ -143,3 +143,14 @@ static double averageWithoutLowest(double[] arr) {
   return sum / count;
 }
 ```
+ 
+* **The fix:** The bug in the program was that it always assumed only **one** lowest value when calculating the total to divide by (i.e. `arr.length - 1`). Thus, the fix to this bug is to add variable, I called `count`, to track the total numbers that were included when calculating the total sum. At the end, the average would be obtained from dividing the sum by `count` which will properly account for duplicate lowest values.
+ 
+## **Part 3 - Reflection**
+* This part expresses what I learned from lab in weeks 2 and/or 3
+ 
+#### **Week 2:**
+From Week 2, I learned a lot about starting up web servers. Although I do not fully grasp the ins and outs of how exactly the web server starts from the code provided to us in the `server.java` file, I learned about how the main method takes a port number from a user and passes it and an instance of a handler class to a start server method, in which that handler class deals with requests from the URL. I found it interesting that the URL had a lot in relation to file paths, especially when dealing with the handler class, we had to use methods like getPath() and getQuery() to look at specific segments of the URL.
+
+#### **Week 3:**
+From Week 3, I was already aware of JUnit from CSE 12. However, I used it in eclipse IDE, where JUnit was already built-in along with the downloaded packages from any PAs. Thus, from using JUnit here in VSCode and debugging with it, I learned a lot of how it exactly works when compiling and running our program. For example, when compiling, we had to use `local $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java` and I learned that `*.java` was a way to compile all java files. And on top of that, I learned about how `-cp` is a cmd-line argument for Java to look for classes, hence classpath. And finally, I learned about how `.jar` files are similar to `.zip` files.
