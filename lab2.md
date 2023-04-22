@@ -71,31 +71,40 @@ class StringServer {
 5. Lastly, we return `msg` to output in our web server, which will have our second message be printed on a new line as shown above
  
 ## **Part 2 - Debugging**
-* This part demonstrates the ability to use JUnit tool to test buggy programs. We find a failure-inducing input to find symptoms of our program output, in which we use to help identify the bug in our code.
+* This part demonstrates the ability to use JUnit tool to test buggy programs. We find a failure-inducing input to find symptoms of our program output, in which we use to help identify the bug in our code. 
+* Here, we will test the method `averageWithoutLowest`.
+* Functionality of `averageWithoutLowest`:
+```
+// Averages the numbers in the array (takes the mean), but leaves out the
+// lowest number when calculating. Returns 0 if there are no elements or just
+// 1 element in the array
+```
  
-### **Code to inspect: averageWithoutLowest:**
-```
-  // Averages the numbers in the array (takes the mean), but leaves out the
-  // lowest number when calculating. Returns 0 if there are no elements or just
-  // 1 element in the array
-  static double averageWithoutLowest(double[] arr) {
-    if(arr.length < 2) { return 0.0; }
-    double lowest = arr[0];
-    for(double num: arr) {
-      if(num < lowest) { lowest = num; }
-    }
-    double sum = 0;
-    for(double num: arr) {
-      if(num != lowest) { sum += num; }
-    }
-    return sum / (arr.length - 1);
-  }
-```
 #### **Failure-Inducing Input in JUnit:**
+```
+@Test
+public void testAvg2Lowest() {
+  double[] twoLowest = {2.0, 2.0, 2.5, 3.5};
+  assertEquals(ArrayExamples.averageWithoutLowest(twoLowest), 3.0, 0);
+}
+```
+* **Note:** We expect the method to identify `2.0` as the lowest value and hence, will not account for it when calculating the average. So we have `2.5 + 3.5 = 6.0 / 2 = 3.0`
 
+#### **NON-failure-inducing Input in JUnit:**
+```
+@Test
+public void testAvgLowestPosition() {
+  double[] lowestFirst = {1.0, 2.5, 3.5};
+  double [] lowestMiddle = {2.5, 1.0, 3.5};
+  double [] lowestEnd = {2.5, 3.5, 1.0};
 
-
-
-
-
-
+  assertEquals(ArrayExamples.averageWithoutLowest(lowestFirst), 3.0, 0);
+  assertEquals(ArrayExamples.averageWithoutLowest(lowestMiddle), 3.0, 0);
+  assertEquals(ArrayExamples.averageWithoutLowest(lowestEnd), 3.0, 0);
+}
+```
+* **Note:** Here, we test three different arrays with the same set of numbers, except the lowest value is located in different positions. We test if the program can correctly identify the lowest value of the array and also account for it when calculating the average.
+ 
+#### **Symptom from compiling and then running the JUnit tests:**
+ 
+![Image](methodTestBug.png)
