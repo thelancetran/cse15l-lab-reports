@@ -17,4 +17,8 @@
 #### `Less`:
 ![Image](images/less.png)
 
-## 
+## **Grep:**
+* For this lab, I decided to go with the `grep` command because it was the most confusing to me.
+* Not only that, but I feel like its probably one of the more useful commands out of the three. (But I could be wrong)
+* To start off, I asked Chat-GPT to give a description of the `grep` command:
+![Image](images/grepdescription.png)
