@@ -7,4 +7,5 @@
 * So I did exactly just that:
  
 ### Prompt:
-![Image](images/prompt.png)
+![Image](images/Prompt.png)
+
