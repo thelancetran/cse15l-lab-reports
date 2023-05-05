@@ -16,9 +16,34 @@
 ![Image](images/find.png)
 #### `Less`:
 ![Image](images/less.png)
+ 
+* Even though Chat-GPT doesn't give us every option, I still feel like its pretty interesting to see!
 
 ## **Grep:**
-* For this lab, I decided to go with the `grep` command because it was the most confusing to me.
-* Not only that, but I feel like its probably one of the more useful commands out of the three. (But I could be wrong)
-* To start off, I asked Chat-GPT to give a description of the `grep` command:
-![Image](images/grepdescription.png)
+* For this lab, I decided to go with the `grep` command because it was the most confusing to me and so I want to tackle it to get a better understanding!
+* From earlier, the commands that seemed interesting to me were `-v`, `-w`, `-n`, and `-m`
+* **NOTE:** I did ask Chat-GPT again for a list of ALL options or flags using grep. To prevent this write-up from being too lengthy of Chat-GPT screenshots, I will briefly just say that only `-m` is the only 'new' option obtained from this search.
+
+### `-v`
+* According to AI, this option **inverts** our grep search, in which it will show lines that **don't** match the given pattern.
+
+
+
+
+### -`w`
+* Our good friend Chat-GPT describes this option as a way to match **whole words** as opposed to partial matches.
+
+
+
+
+### `-n`
+* AI says that this option can be used in our grep search to show each matching line's **line number** in the file.
+
+
+
+
+### -`m NUM`
+* Chat-GPT describes this option as a way to tell grep to stop searching after a certain number of matches.
+
+
+
