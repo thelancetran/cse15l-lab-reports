@@ -12,10 +12,8 @@
 ### Chat-GPT Response:
 #### `Grep`:
 ![Image](images/grep.png)
- 
 ####  `Find`:
 ![Image](images/find.png)
- 
 #### `Less`:
 ![Image](images/less.png)
  
