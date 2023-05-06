@@ -114,9 +114,47 @@ technical/government/Media/Working_for_Free.txt
 
 ### `-n`
 * AI says that this option can be used in our grep search to show each matching line's **line number** in the file.
+##### Example 1:
+```
+$ grep -n "clean air" technical/government/Env_Prot_Agen/*.txt
+technical/government/Env_Prot_Agen/final.txt:70:Amendments of 1990, it revolutionized clean air policy regarding
+technical/government/Env_Prot_Agen/multi102902.txt:3126:are directly employed on these clean air projects will purchase
+technical/government/Env_Prot_Agen/nov1.txt:182:clean air goals. A comprehensive legislative approach with
+technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:66:litigation as a means of achieving clean air.
+technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:68:America's most successful clean air law in the last decade, and
+technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:71:far-reaching clean air initiatives. In 1999, then-Governor Bush
+technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:120:clean air goals.
+technical/government/Env_Prot_Agen/tech_adden.txt:502:been employed in support of the development of federal clean air
+```
+* In this case, I used the `-n` option to find the lines in the text files of the government/Env_Prot_Agen directory that contain "clean air".
+* I find this command pretty useful in wanting to find exactly where in the file that the pattern occurs in.
 
-
-
+##### Example 2: (Used ... here to make it more readable)
+```
+$ grep -w -n -i "environment" technical/plos/*.txt
+technical/plos/journal.pbio.0020019.txt:52:        upon the environment act as evolutionary buffers? To test this, Bergman and Siegal (2003)
+technical/plos/journal.pbio.0020019.txt:56:        exposed to an environment in which a particular phenotype was optimal). A new optimum
+technical/plos/journal.pbio.0020019.txt:64:        environment, suggesting that the release of the hidden genetic variation does not have to
+technical/plos/journal.pbio.0020035.txt:22:        a competitive advantage in the complex soil environment, where they are exposed to stresses        
+technical/plos/journal.pbio.0020053.txt:68:        advantage in their environment) produced mostly by bacteria and fungi and made by a complex
+technical/plos/journal.pbio.0020054.txt:116:        Bradstock, principal research scientist in the New South Wales Department of Environment
+technical/plos/journal.pbio.0020067.txt:116:        DNA research continued at Kings College in a gradually improving environment: important
+technical/plos/journal.pbio.0020068.txt:79:        selection to maintain genes in the host cellular environment. As a result of gene loss,
+.
+.
+.
+technical/plos/pmed.0020007.txt:91:          greater neural complexity after having been exposed to an enriched environment that
+technical/plos/pmed.0020016.txt:40:        environment in which life-saving treatment becomes available on a large scale; however,
+technical/plos/pmed.0020016.txt:252:          and services. It also requires an environment that encourages people to internalize
+technical/plos/pmed.0020016.txt:255:          Stoneburner and Low-Beer have argued that the supportive social and political environment
+technical/plos/pmed.0020061.txt:221:        further testing in the home environment. Using an experimental group and a control group,
+technical/plos/pmed.0020212.txt:42:        an indirect means by which to infer the roles of genes and environment. There are many
+technical/plos/pmed.0020232.txt:50:        likely to be an excellent environment for the evolution of multiple resistance factors,
+technical/plos/pmed.0020272.txt:68:        PLoS Medicine , we seek to create a publication environment that is
+```
+* This is an example of combining `-w` with `-n`, which will give me the line numbers of the lines that match exactly with "environment".
+* I also included `-i`, which is a flag to ignore case-sensitivity (thanks Chat-GPT).
+* I find `-n` to be really useful when we want to find exactly where in a file a pattern is located.
 
 ### -`m NUM`
 * Chat-GPT describes this option as a way to tell grep to stop searching after a certain number of matches.
