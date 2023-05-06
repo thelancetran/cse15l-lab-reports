@@ -3,7 +3,7 @@
 * Research 4 different options and give 2 examples using the `./technical` directory that we have been working with.
  
 ## Chat-GPT!
-* Before I select a command to research, I was curious to see how effective Chat-GPT would be in helping me get the information for these commands.
+* Before I select a command to research, I was curious to see how effective [https://openai.com/](Chat-GPT) would be in helping me get the information for these commands.
 * So I did exactly just that:
  
 ### Prompt:
