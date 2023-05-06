@@ -26,28 +26,29 @@
 
 ### `-v`
 * According to AI, this option **inverts** our grep search, in which it will show lines that **don't** match the given pattern.
-#### Example 1: 
-```wc -l technical/911report/*.txt | sort
+#### Prior Work: 
+* *Note that I added ... to make it less lengthy!*
+`wc -l technical/911report/*.txt | sort
     108 technical/911report/preface.txt
     603 technical/911report/chapter-10.txt
-    731 technical/911report/chapter-1.txt
-    817 technical/911report/chapter-11.txt
-    948 technical/911report/chapter-2.txt
-   1036 technical/911report/chapter-8.txt
-   1089 technical/911report/chapter-13.1.txt
-   1204 technical/911report/chapter-5.txt
-   1236 technical/911report/chapter-13.2.txt
-   1539 technical/911report/chapter-12.txt
-   1579 technical/911report/chapter-7.txt
-   1718 technical/911report/chapter-13.3.txt
-   1885 technical/911report/chapter-9.txt
-   1898 technical/911report/chapter-6.txt
-   2941 technical/911report/chapter-13.4.txt
+  . 
+  .
+  .
    3159 technical/911report/chapter-3.txt
    3237 technical/911report/chapter-13.5.txt
-  25728 total```
+  25728 total`
+* I used the recently learned "Pipe" command to take the output from `wc` and used it as input to `sort`
+* We have 25728 total lines from all the text files from 911report.
+##### Example 1:
+`$ grep -v "murder" technical/911report/*.txt | wc -l | sort
+25721`
+* Note that I used the "Pipe" command again to use my `grep` output as an input into `wc` and then into `sort`. I find this technique to be very useful!
+* Here, we use the `-v` option so that we can count the number of lines that do **not** contain "murder". It turns out we can deduce that 7 lines contain the word "murder". This command can be useful in filtering out what we do not want.
 
-
+##### Example 2: 
+`$ grep -v -e "murder" -e "blood" -e "police" -e "poison" -e "fire" technical/911report/*.txt | wc -l | sort
+25422`
+* Now here is a stronger example. Suppose that I wanted lines that do not contain "murder", "blood", "police", "poison", or "fire". Then, I'd be able to use the `-e` command along with `-v` in order to make a stronger filter to give me what I want. In this case, we can see that there are 306 lines that contain either one or more of these words. Therefore, `-v` is a very powerful tool that can be used in combination with other commands to create a filter of what a user might not want in an output.
 
 ### -`w`
 * Our good friend Chat-GPT describes this option as a way to match **whole words** as opposed to partial matches.
