@@ -158,6 +158,37 @@ technical/plos/pmed.0020272.txt:68:        PLoS Medicine , we seek to create a p
 
 ### -`m NUM`
 * Chat-GPT describes this option as a way to tell grep to stop searching after a certain number of matches.
+##### Example 1:
+```
+$ grep -m 1 "Congress" technical/911report/chapter-1.txt
+    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for 
+work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.
+```
+* In this example, I used `-m` with 1 to get the first occurence of "Congress" in chapter-1.txt in the technical/911report directory.
+* Note that although the output is long with 4 lines, I checked the actual txt file and all of this output was fit into one line.
+* `-m` is useful in the case where we only want to find the first "x" number of output that match our pattern.
 
+##### Example 2:
+```
+$ grep -n -m 2 "pollution" technical/government/Env_Prot_Agen/*.txt
+technical/government/Env_Prot_Agen/bill.txt:11:To amend the Clean Air Act to reduce air pollution through
+technical/government/Env_Prot_Agen/bill.txt:399:or the State or local air pollutioncontrol agency, with an approved
+technical/government/Env_Prot_Agen/final.txt:71:regional and national air pollution issues and drove environmental
+technical/government/Env_Prot_Agen/final.txt:199:emissions increase -- they include state-of-the-art air pollution
+technical/government/Env_Prot_Agen/jeffordslieberm.txt:170:analyses, the pollution control technology assumptions are not
+technical/government/Env_Prot_Agen/jeffordslieberm.txt:380:are computed as the increased expenditures on pollution control,
+technical/government/Env_Prot_Agen/multi102902.txt:27:methods for the prevention and control of pollution to air, land,
+technical/government/Env_Prot_Agen/multi102902.txt:30:groundwater; and prevention and control of indoor air pollution.
+technical/government/Env_Prot_Agen/nov1.txt:100:compliance and yield pollution prevention benefits. Simply, the
+technical/government/Env_Prot_Agen/nov1.txt:237:both ozone and fine particle pollution in many areas. This is what
+technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:10:pollution from electricity generators and improve air quality
+technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:12:pollution 70 percent, using a proven, market-based approach that
+technical/government/Env_Prot_Agen/section-by-section_summary.txt:858:significantly to the petitioner's air pollution problems. If the
+technical/government/Env_Prot_Agen/tech_adden.txt:443:(e.g. pollution caps or transmission limitations). The model, which
+technical/government/Env_Prot_Agen/tech_adden.txt:519:scales (e.g., over the contiguous U.S.). Air pollution issues meant
+```
+* Here we combine the `-n` option from earlier with the `-m` option to generate the first two lines and their line numbers that contain "pollution" from all the txt files in the technical/government/Env_Prot_Agen directory.
+* Combining these two can be helpful when we only want to find first "x" occurences that match our pattern, as well as locating which line numbers they are found at.
 
-
+## Conclusion
+I think this lab report was helpful for me in getting a better understanding with the `grep` command. Learning these different options made me realize how we could combine them to make really specific searches for our convenience. Moreover, it was interesting to see some overlapping, like how I noted with the `-L` option and `-v`. Of course, there is a lot of other different options that do similar or different things, and this is just only for the grep command. I find it crazy how there's so many options/flags just for one command, and its interesting to me their intricacy, in which it becomes more complex when we combine them.
