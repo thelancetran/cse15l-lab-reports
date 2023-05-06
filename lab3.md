@@ -53,6 +53,7 @@ $ grep -v "murder" technical/911report/*.txt | wc -l | sort
 ##### Example 2: 
 ```
 $ grep -v -e "murder" -e "blood" -e "police" -e "poison" -e "fire" technical/911report/*.txt | wc -l | sort
+ 
 25422
 ```
 * Now here is a stronger example. Suppose that I wanted lines that do not contain "murder", "blood", "police", "poison", or "fire". Then, I'd be able to use the `-e` command along with `-v` in order to make a stronger filter to give me what I want. In this case, we can see that there are 306 lines that contain either one or more of these words. Therefore, `-v` is a very powerful tool that can be used in combination with other commands to create a filter of what a user might not want in an output.
