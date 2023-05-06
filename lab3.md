@@ -26,7 +26,26 @@
 
 ### `-v`
 * According to AI, this option **inverts** our grep search, in which it will show lines that **don't** match the given pattern.
-
+#### Example 1: 
+```wc -l technical/911report/*.txt | sort
+    108 technical/911report/preface.txt
+    603 technical/911report/chapter-10.txt
+    731 technical/911report/chapter-1.txt
+    817 technical/911report/chapter-11.txt
+    948 technical/911report/chapter-2.txt
+   1036 technical/911report/chapter-8.txt
+   1089 technical/911report/chapter-13.1.txt
+   1204 technical/911report/chapter-5.txt
+   1236 technical/911report/chapter-13.2.txt
+   1539 technical/911report/chapter-12.txt
+   1579 technical/911report/chapter-7.txt
+   1718 technical/911report/chapter-13.3.txt
+   1885 technical/911report/chapter-9.txt
+   1898 technical/911report/chapter-6.txt
+   2941 technical/911report/chapter-13.4.txt
+   3159 technical/911report/chapter-3.txt
+   3237 technical/911report/chapter-13.5.txt
+  25728 total```
 
 
 
