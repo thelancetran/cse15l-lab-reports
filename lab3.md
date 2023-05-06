@@ -24,7 +24,7 @@
 * From earlier, the commands that seemed interesting to me were `-v`, `-w`, `-n`, and `-m`
 * **NOTE:** I did ask Chat-GPT again for a list of ALL options or flags using grep. To prevent this write-up from being too lengthy of Chat-GPT screenshots, I will briefly just say that only `-m` is the only 'new' option obtained from this search.
 
-### `-v`
+## 1.`-v`
 * According to AI, this option **inverts** our grep search, in which it will show lines that **don't** match the given pattern.
 #### Prior Work: 
 * *Note that I added ... to make it less lengthy!*
@@ -57,7 +57,7 @@ $ grep -v -e "murder" -e "blood" -e "police" -e "poison" -e "fire" technical/911
 ```
 * Now here is a stronger example. Suppose that I wanted lines that do not contain "murder", "blood", "police", "poison", or "fire". Then, I'd be able to use the `-e` option along with `-v` in order to make a stronger filter to give me what I want. In this case, we can see that there are 306 lines that contain either one or more of these words. Therefore, `-v` is a very powerful tool that can be used in combination with other commands to create a filter of what a user might not want in an output.
 
-### -`w`
+## 2.`-w`
 * Our good friend Chat-GPT describes this option as a way to match **whole words** as opposed to partial matches.
 ##### Example 1:
 ```
@@ -112,7 +112,7 @@ technical/government/Media/Working_for_Free.txt
 * I think generally, `-w` is useful for pinpointing exact words or phrases, while not including partial matches.
 
 
-### `-n`
+## 3.`-n`
 * AI says that this option can be used in our grep search to show each matching line's **line number** in the file.
 ##### Example 1:
 ```
@@ -156,7 +156,7 @@ technical/plos/pmed.0020272.txt:68:        PLoS Medicine , we seek to create a p
 * I also included `-i`, which is a flag to ignore case-sensitivity (thanks Chat-GPT).
 * I find `-n` to be really useful when we want to find exactly where in a file a pattern is located.
 
-### -`m NUM`
+## 4.`-m NUM`
 * Chat-GPT describes this option as a way to tell grep to stop searching after a certain number of matches.
 ##### Example 1:
 ```
