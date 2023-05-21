@@ -4,6 +4,6 @@
 
 ## Steps
 * **Setup:**
-1. Delete any existing forks of the repository you have on your account
-2. Fork the repository
-3. Start the timer!
+  1. Delete any existing forks of the repository you have on your account
+  2. Fork the repository
+  3. Start the timer!
