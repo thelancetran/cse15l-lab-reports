@@ -27,14 +27,25 @@
 * We type the following:
     1. `?ind` --> `<Enter>`
        - Searching online for command hints, I was able to find the reverse search command which is `?`. 
-       - Knowing from lab that the change we have to make is in the last occurrence of the word `index`, we type `ind` to make things shorter and faster!
+       - Knowing from lab that the change we have to make is in the last occurrence of the word `index`, we type `ind` to make things faster and we can jump straight to it!
     2. `e` 
-       - We use the `e` command to move our cursor to the end of the word, so from `|index1` we go to `index|1`
+       - We move our cursor to the end of the word, so from `|index1` we go to `index|1`
     3. `x`
        - Using the `x` command, we can delete the character following our cursor
     4. `i` --> `2` --> `<Esc>`
-       - We go into Insert Mode using `i`
+       - We go into Insert Mode
        - Type 2 since we want to make the change from `index1` to `index2`
-       - Return to Normal Mode by pressing `<Esc>`
+       - Return to Normal Mode
     6. `:wq` 
-  8. 
+       - Finally, we save our changes and exit vim!
+  8. Run the tests, demonstrating that they now succeed
+![Image](images/Step_8.png)
+* After changing `ListExamples.java` in VIM, we can run the same command above to test our fix: `bash test.sh`
+  9. Commit and push the resulting change to your Github account
+![Image](images/Step_9.png)
+* Here, we use `git add ListExamples.java` to stage the file to be ready to push to our repo on Github.
+* Then, we use `git commit -m "<message>"` to save the changes on our local repository with a message describing the changes.
+* Lastly, we use `git push` to push our changes onto our Github repo.
+
+## Conclusion/Reflection
+   To me, learning about VIM was pretty fascinating. During lecture when Professor Politz stated that he was debating about teaching VIM, even mentioning that he didn't teach it last quarter but chose to do so this quarter, I thought it was interesting to be able to see why he would have this debate. Although I could simply do these things easily like how we are all used to like opening up the java file in our favorite editor (VS Code) and make the changes there, I could see the advantages of VIM in that it can be extremely quick with enough experience. To be honest, I didn't even know about VIM before learning about it in this class, so I think just generally it was cool to be introduced to new command line text editor.
