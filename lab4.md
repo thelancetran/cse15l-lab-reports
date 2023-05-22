@@ -24,10 +24,10 @@
  
 ### 7. Edit the code file to fix the failing test
 ![Image](images/Step_7.png) 
-* First, we go to the file to be edited (ListExamples.java): `vim ListExamples.java`
+* First, we need to open the file to be edited (ListExamples.java): `vim ListExamples.java`
 * We type the following:
     1. `?ind` --> `<Enter>`
-       - Searching online for command hints, I was able to find the reverse search command which is `?`. 
+       - Searching online for command hints, I was able to find the backwards search command (search starting from the end of the file) which is `?`. 
        - Knowing from lab that the change we have to make is in the last occurrence of the word `index`, we type `ind` to make things faster and we can jump straight to it!
     2. `e` 
        - We move our cursor to the end of the word, so from `|index1` we go to `index|1`
