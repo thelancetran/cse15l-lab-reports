@@ -25,11 +25,11 @@
 ![Image](images/Step_7.png)
 * First, we go to the file to be edited (ListExamples.java): `vim ListExamples.java`
 * We type the following:
- 1. `?ind` --> `<Enter>`
+    1. `?ind` --> `<Enter>`
  - Searching online for command hints, I was able to find the reverse search command which is `?`. 
  - Knowing from lab that the change we have to make is in the last occurrence of the word `index`, we type `ind` to make things shorter and faster!
- 2. `e` 
- 3. `x`
- 4. `i` --> `2` --> `<Esc>`
- 5. `:wq` 
+    2. `e` 
+    3. `x`
+    4. `i` --> `2` --> `<Esc>`
+    5. `:wq` 
   8. 
