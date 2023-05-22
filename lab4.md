@@ -47,7 +47,9 @@
     6. `:wq` 
        - Finally, we save our changes and exit vim!
  ---
-  8. Run the tests, demonstrating that they now succeed
+8. Run the tests, demonstrating that they now succeed 
+
+
 ![Image](images/Step_8.png) 
  
 * After changing `ListExamples.java` in VIM, we can run the same command above to test our fix: `bash test.sh`
