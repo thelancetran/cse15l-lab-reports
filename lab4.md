@@ -7,26 +7,22 @@
   2. Fork the repository (onto your Github account)
   3. Start the timer!
  
-### 4
-* Log into ieng6 
+### 4. Log into ieng6
 * (Note: In lab, I followed the steps in the `Generating SSH Keys for ieng6` section so that I do not have to enter my password to access my ieng6 account)
 ![Image](images/Step_4.png) 
 * Here, we want to connect to the remote server on the ieng6 account: `ssh <My ieng6 account>`
  
-### 5 
-* Clone your fork of the repository from your Github account
+### 5. Clone your fork of the repository from your Github account
 ![Image](images/Step_5.png) 
 * On the forked repository on Github, I copied the `<SSH link>` so that I could use it in the command: `git clone <SSH Link>`. 
 * (Note: Earlier in lab, I followed the steps in the `Generating SSH Keys for GitHub` section so that I can clone, add, commit, and push to the repository from the ieng6 machine)
  
-### 6 
-* Run the tests, demonstrating that they fail
+### 6. Run the tests, demonstrating that they fail
 ![Image](images/Step_6.png) 
 * First, we need access to the files in the directory we just cloned, so we have to do: `cd lab7` 
 * Next, we want to run the bash script that will compile our files and run the tests: `bash test.sh`
  
-### 7
-* Edit the code file to fix the failing test
+### 7. Edit the code file to fix the failing test
 ![Image](images/Step_7.png) 
 * First, we go to the file to be edited (ListExamples.java): `vim ListExamples.java`
 * We type the following:
@@ -44,13 +40,11 @@
     6. `:wq` 
        - Finally, we save our changes and exit vim!
  
-### 8
-* Run the tests, demonstrating that they now succeed 
+### 8. Run the tests, demonstrating that they now succeed 
 ![Image](images/Step_8.png) 
 * After changing `ListExamples.java` in VIM, we can run the same command above to test our fix: `bash test.sh` 
  
-### 9
-* Commit and push the resulting change to your Github account
+### 9. Commit and push the resulting change to your Github account
 ![Image](images/Step_9.png)
 * Here, we use `git add ListExamples.java` to stage the file to be ready to push to our repo on Github.
 * Then, we use `git commit -m "<message>"` to save the changes on our local repository with a message describing the changes.
