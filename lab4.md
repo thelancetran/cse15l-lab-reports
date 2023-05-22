@@ -14,7 +14,6 @@
 ![Image](images/Step_4.png) 
  
 * Here, we want to connect to the remote server on the ieng6 account: `ssh <My ieng6 account>` 
- 
   5. Clone your fork of the repository from your Github account
 ![Image](images/Step_5.png) 
  
