@@ -15,7 +15,7 @@
 
 * Here, we want to connect to the remote server on the ieng6 account: `ssh <My ieng6 account>`
 
-  5. Clone your fork of the repository from your Github account
+5. Clone your fork of the repository from your Github account
 ![Image](images/Step_5.png) 
  
 * On the forked repository on Github, I copied the `<SSH link>` so that I could use it in the command: `git clone <SSH Link>`. 
