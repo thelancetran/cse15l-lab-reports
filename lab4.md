@@ -29,7 +29,12 @@
        - Searching online for command hints, I was able to find the reverse search command which is `?`. 
        - Knowing from lab that the change we have to make is in the last occurrence of the word `index`, we type `ind` to make things shorter and faster!
     2. `e` 
+       - We use the `e` command to move our cursor to the end of the word, so from `|index1` we go to `index|1`
     3. `x`
+       - Using the `x` command, we can delete the character following our cursor
     4. `i` --> `2` --> `<Esc>`
-    5. `:wq` 
+       - We go into Insert Mode using `i`
+       - Type 2 since we want to make the change from `index1` to `index2`
+       - Return to Normal Mode by pressing `<Esc>`
+    6. `:wq` 
   8. 
