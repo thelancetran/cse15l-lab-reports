@@ -52,8 +52,10 @@
 
 ![Image](images/Step_8.png) 
  
-* After changing `ListExamples.java` in VIM, we can run the same command above to test our fix: `bash test.sh`
-  9. Commit and push the resulting change to your Github account
+* After changing `ListExamples.java` in VIM, we can run the same command above to test our fix: `bash test.sh` 
+
+---
+9. Commit and push the resulting change to your Github account
 ![Image](images/Step_9.png)
 * Here, we use `git add ListExamples.java` to stage the file to be ready to push to our repo on Github.
 * Then, we use `git commit -m "<message>"` to save the changes on our local repository with a message describing the changes.
