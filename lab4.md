@@ -17,9 +17,8 @@
  
   6. Run the tests, demonstrating that they fail
 ![Image](images/Step_6.png) 
- 
-* First, we need access to the files in the directory we just cloned, so we have to do: `cd lab7` 
-* Next, we want to run the bash script that will compile our files and run the tests: `bash test.sh`
+   * First, we need access to the files in the directory we just cloned, so we have to do: `cd lab7` 
+   * Next, we want to run the bash script that will compile our files and run the tests: `bash test.sh`
   7. Edit the code file to fix the failing test
  
 ![Image](images/Step_7.png) 
