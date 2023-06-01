@@ -20,3 +20,12 @@
 - Try that and see if it works!
 
 ### 3. Student Fix/Resolution
+![Image](images/fixedOutput.png)
+
+- It worked! Thank you so much! I was so convinced that the directory was correct that I didn't even think about it. It makes sense now and its clear to me that the bug was **simply the directory being inaccurate**, in which it was in a different one than the working directory.
+- Another fix that I did to avoid having to do `../..` was moving the `textfiles` directory into the working directory. I ran `mv textfiles src/java` on the terminal to accomplish this task. Then, running the old command `bash test.sh textfiles/novels/Koko.txt` works!
+
+![Image](images/studentSolution.png)
+
+## Reflection
+
